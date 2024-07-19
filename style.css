@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial;
+    outline: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #E9E9E9;
+}
+
+.container {
+    display: flex;
+    justify-content: top;
+    align-items: center;
+    flex-direction: column;
+}
+
+.to-do-list {
+    width: 60%;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    background: linear-gradient(-65deg, #11DBFE 0%, #3895FF 100%);
+    box-shadow: 2px 4px 10px 0 #0c273c40;
+}
+
+h1 {
+    color: #fff;
+    font-size: 3em;
+    margin: 1rem;
+    background: none;
+}
+
+.add_task {
+    display: flex;
+    background: none;
+    margin: 1em;
+}
+
+input {
+    width: 100%;
+    border: none;
+    background: #fff;
+    min-width: 15rem;
+    padding: 1.5rem 2rem;
+    border-radius: 0.5rem;
+    margin-right: 1em;
+    font-size: 1em;
+}
+
+.addBtn {
+    width: 15rem;
+    border: none;
+    padding: 1.5rem 2rem;
+    background: #fff;
+    color: #3895FF;
+    font-size: 1em;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.2s;
+    border-radius: 0.5rem;
+}
+
+.addBtn:hover {
+    background: #edf3f9;
+}
+
+.tasks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    width: 60%;
+    margin: 1rem;
+    padding: 0.5em 1em;
+    border-radius: 1rem;
+    box-shadow: 2px 4px 10px 0 #0c273c40;
+}
+
+#empty_msg {
+    font-size: 1.5em;
+    color: #999;
+}
+
+ul {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background: none;
+}
+
+ul li {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f5f5f5;
+    padding: 0 1em;
+    margin: 0.5em 0;
+    border-radius: 0.5rem;
+    user-select: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+ul li:hover {
+    background: #eee;
+}
+
+.task_name {
+    font-size: 1.2em;
+    margin-left: 1rem;
+    transition: 0.2s;
+}
+
+ul li.checked {
+    background: #ddd;
+}
+
+ul li.checked .task_name{
+    color: #313131;
+    text-decoration: line-through;
+}
+
+.delete {
+    padding: .1em 0.5em;
+    border-radius: 1em;
+    cursor: pointer;
+    background: none;
+    border: none;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: 0.25s;
+}
+
+.delete:hover {
+    background-color: #d14238;
+    color: white;
+}
